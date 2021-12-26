@@ -1,0 +1,119 @@
+section {
+  background-color: #192734;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section .heading {
+  font-size: 2rem;
+}
+
+.coding-profile {
+  line-height: 30px;
+}
+.coding-profile button {
+  padding: 5px;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+  border: 1px solid white;
+}
+.coding-profile button:hover {
+  background-color: green;
+  color: black;
+}
+.view {
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: greenyellow;
+  border: 1px solid;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.coding-profile button:hover {
+  border: 1px solid white;
+}
+a {
+  all: unset;
+}
+
+.box {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.box h3 {
+  margin-bottom: 30px;
+}
+
+.right img {
+  width: 450px;
+}
+
+.skill-box > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.expertise {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111921;
+  line-height: 25px;
+  padding: 5px;
+}
+
+.article-gfg {
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+/* For Responsive */
+@media screen and (max-width: 1165px) {
+  .box {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .box {
+    flex-direction: column;
+  }
+  .left {
+    order: 2;
+  }
+  .right {
+    order: 1;
+  }
+  .right img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .right img {
+    width: 300px;
+  }
+  .box {
+    width: 100%;
+    box-sizing: content-box;
+  }
+  section {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .expertise {
+    flex-direction: column;
+  }
+}
